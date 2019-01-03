@@ -11,20 +11,24 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-    persons: [
-      { id: '1',  name: 'Samir', age: 26  },
-      { id: '2',  name: 'Sanjay', age: 27 },
-      { id: '3',  name: 'Ravi', age: 25 }
-    ],
-    otherState: 'some other',
-    showPerson: false
-  }
+      persons: [
+        { id: '1',  name: 'Samir', age: 26  },
+        { id: '2',  name: 'Sanjay', age: 27 },
+        { id: '3',  name: 'Ravi', age: 25 }
+      ],
+      otherState: 'some other',
+      showPerson: false
+     }
 
     console.log('[App.js] Inside constructor()', props);
   }
 
   componentWillMount(){
     console.log('[App.js] Inside componentWillMount()');
+  }
+
+  componentDidMount(){
+    console.log('[App.js] Inside componentDidMount()');
   }
 
 	switchOnClick = (event, id) => {
@@ -66,7 +70,7 @@ class App extends Component {
 	}
 
   render() {
-
+    console.log('[App.js] Inside render()');
   	let persons = null;
 
   	if(this.state.showPerson){
