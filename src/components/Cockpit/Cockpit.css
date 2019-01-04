@@ -11,7 +11,7 @@
   font-style: italic;
 }
 
-.Cockpit button {
+.Button {
 	background-color: green;
 	padding: 15px;
 	font: inherit;
@@ -21,16 +21,16 @@
 }
 
 
-.Cockpit button:hover {
+.Button:hover {
 	background-color: lightgreen;
 	color: black;
 }
 
-.Cockpit button.Red {
+.Button.Red {
 	background-color: red;
 }
 
-.Cockpit button.Red:hover {
+.Button.Red:hover {
 	background-color: salmon;
 	color: black;
 }
